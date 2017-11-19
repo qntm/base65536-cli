@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "noImplicitAny": true,
+    "noUnusedLocals": true,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noImplicitUseStrict": true,
+    "noUnusedParameters": true,
+    "strictNullChecks": true,
+    "outDir": ".",
+    "noImplicitAny": false,
+    "sourceMap": false,
+    "lib": ["es2015"]
+  },
+  "files": [
+    "src/bin/index.ts",
+    "src/test/parse.spec.ts"
+  ]
+}

@@ -15,3 +15,9 @@
 *.PDF	 diff=astextplain
 *.rtf	 diff=astextplain
 *.RTF	 diff=astextplain
+
+*.bin binary
+
+# Linguist is stupid, it thinks the hashbang line
+# overrides the file extension
+*.ts linguist-language=TypeScript
