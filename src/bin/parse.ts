@@ -14,7 +14,7 @@ interface Config {
   action: Action,
   wrap: number,
   ignoreGarbage: boolean,
-  fileName: string|undefined
+  fileName: string | undefined
 }
 
 export default function (args: string[]) {
