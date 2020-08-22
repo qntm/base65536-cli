@@ -44,5 +44,8 @@
   },
   "dependencies": {
     "base65536-stream": "^6.55.36"
-  }
+  },
+  "files": [
+    "bin"
+  ]
 }
