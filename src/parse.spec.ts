@@ -2,8 +2,8 @@
 
 'use strict'
 
-import Action from './../bin/action'
-import parse from './../bin/parse'
+import Action from './action'
+import parse from './parse'
 
 describe('parse', function () {
   it('helps', function () {

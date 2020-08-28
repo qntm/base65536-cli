@@ -9,13 +9,13 @@
     "noImplicitUseStrict": true,
     "noUnusedParameters": true,
     "strictNullChecks": true,
-    "outDir": ".",
+    "outDir": "dist",
     "noImplicitAny": false,
     "sourceMap": false,
     "lib": ["es2015"]
   },
-  "files": [
-    "src/bin/index.ts",
-    "src/test/parse.spec.ts"
-  ]
+  "include": [
+    "src/**/*.ts"
+  ],
+  "exclude": ["node_modules"]
 }
