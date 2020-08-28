@@ -35,7 +35,7 @@ $ echo "hello world" | base65536
 驨ꍬ啯𒁷ꍲ㹤
 ```
 
-Take with line endings. Normally, "hello world" would encode to `驨ꍬ啯𒁷ꍲᕤ`, but `echo` appends a `\n`.
+Take care with line endings. Normally, `'hello world'` would encode to `驨ꍬ啯𒁷ꍲᕤ`, but `echo` appends a `\n`, so `'hello world\n'` encodes to `'驨ꍬ啯𒁷ꍲ㹤'`.
 
 ```bash
 $ echo -n "驨ꍬ啯𒁷ꍲ㹤" | base65536 --decode
