@@ -7,9 +7,9 @@
     "type": "git",
     "url": "git://github.com/qntm/base65536-cli.git"
   },
-  "main": "bin/index.js",
+  "main": "dist/index.js",
   "bin": {
-    "base65536": "bin/index.js"
+    "base65536": "dist/index.js"
   },
   "keywords": [
     "base64",
@@ -21,14 +21,10 @@
     "binary"
   ],
   "scripts": {
-    "build": "npm run tslint && npm run clean && npm run tsc && npm run copy && npm run jasmine",
-    "clean": "rimraf bin dist",
-    "copy": "cp src/bin/help.txt bin/help.txt",
-    "tslint": "tslint --type-check --format verbose --project tsconfig.json --config tslint.json src/**/*.ts",
-    "jasmine": "jasmine --config=jasmine.json",
-    "prepublishOnly": "npm run build",
-    "test": "npm run build",
-    "tsc": "tsc"
+    "build": "npm run tslint && rimraf dist && tsc && npm run copy",
+    "copy": "cp src/help.txt dist/help.txt",
+    "tslint": "tslint --format verbose --project tsconfig.json --config tslint.json src/**/*.ts",
+    "test": "jasmine --config=jasmine.json"
   },
   "author": "qntm",
   "license": "MIT",
@@ -46,6 +42,7 @@
     "base65536-stream": "^6.55.36"
   },
   "files": [
-    "bin"
+    "dist",
+    "!dist/**/*.spec.js"
   ]
 }
