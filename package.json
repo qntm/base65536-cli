@@ -30,7 +30,7 @@
   "license": "MIT",
   "devDependencies": {
     "@types/jasmine": "^3.5.12",
-    "@types/node": "^15.0.1",
+    "@types/node": "^16.0.0",
     "base65536-test": "^1.1.2",
     "jasmine": "^3.5.12",
     "rimraf": "^3.0.2",
